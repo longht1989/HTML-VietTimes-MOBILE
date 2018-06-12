@@ -1,0 +1,276 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+
+/* zone global style */
+
+.zone {
+    margin-bottom: 24px;
+    &__header {
+        margin-bottom: 16px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    &__title {
+        a {
+            display: block;
+            font-size: 18px;
+            line-height: 1.4;
+            padding: 4px 8px 0;
+            border-top: 2px solid $brand-primary;
+            color: $brand-primary;
+            font-family: $font-family-special;
+            text-transform: uppercase;
+            transition: all 0.2s linear;
+            font-weight: bold;
+            &:hover {
+                color: darken($brand-primary, 10%);
+            }
+        }
+    }
+    &__content {}
+    &__footer {
+        text-align: center;
+        margin-top: 12px;
+        .btn {
+            width: 100%;
+            border-color: #ddd;
+            font-family: $font-family-special;
+        }
+        span {
+            color: $brand-primary;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    &--highlight {
+        .zone__content {
+            position: relative;
+            .no-js & {
+                max-height: 495px;
+                overflow: hidden;
+            }
+            .bx {
+                &-controls {
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                }
+                &-pager-item {
+                    float: left;
+                    line-height: 0;
+                    &+.bx-pager-item {
+                        margin-left: 8px;
+                    }
+                }
+                &-pager-link {
+                    display: inline-block;
+                    text-indent: -9999em;
+                    background-color: #D8D8D8;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 8px;
+                    transition: all 0.2s linear;
+                    &.active {
+                        background-color: $brand-primary;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+        .slider-wrap {
+            margin-left: -8px;
+            margin-right: -8px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    &--sub-cate {
+        .zone__title {
+            a {
+                text-transform: none;
+                font-weight: normal;
+            }
+        }
+        .zone__content {
+            @include clearfix();
+        }
+        .story--featured {}
+        .story_listing {
+            .story {
+                &+.story {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    &--special {
+        padding: 0;
+        background: none;
+        .zone__header {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .zone__title {
+            a {
+                font-size: 16px;
+                color: $brand-success;
+                padding: 0;
+                background: none;
+                &:hover {
+                    color: darken($brand-success, 10%);
+                }
+            }
+        }
+        .zone__content {
+            background: white;
+            padding: 16px 8px;
+            border: 1px solid #DDDDDD;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 70%;
+                background: url(../img/bg_specialzone.svg) right top no-repeat;
+                background-size: cover;
+                z-index: 0;
+            }
+        }
+        .no-js & {
+            max-height: 130px;
+            overflow: hidden;
+        }
+        .bx {
+            &-pager {
+                position: absolute;
+                top: 10px;
+                right: 0px;
+            }
+            &-pager-item {
+                float: left;
+                line-height: 0;
+                &+.bx-pager-item {
+                    margin-left: 8px;
+                }
+            }
+            &-pager-link {
+                display: inline-block;
+                text-indent: -9999em;
+                background-color: #D8D8D8;
+                width: 10px;
+                height: 10px;
+                border-radius: 8px;
+                transition: all 0.2s linear;
+                &.active {
+                    background-color: $brand-primary;
+                    width: 24px;
+                }
+            }
+        }
+    }
+    &--video {
+        padding: 16px 8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        background-color: #2e2f2f;
+        .zone__header {
+            margin-bottom: 12px;
+        }
+        .zone__title {
+            a {
+                font-weight: normal;
+                background: transparent;
+                padding: 0;
+                line-height: 1em;
+                border-top: none;
+                color: white;
+                padding: 0 8px;
+            }
+        }
+        .zone__content {
+            @include clearfix();
+        }
+        .story--video-featured {}
+    }
+    .timeline_listing {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #ddd;
+    }
+    .editor_choice {
+        padding: 16px;
+        margin-top: 16px;
+        background-color: $brand-success;
+    }
+    .sidebar-col & {
+        border: 1px solid #ddd;
+        .zone__title {
+            position: relative;
+            min-height: 25px;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: $brand-primary;
+            }
+            a {
+                font-size: 16px;
+                line-height: 25px;
+                position: absolute;
+                background-color: white;
+                padding: 0 8px 0 0;
+                color: $brand-primary;
+                z-index: 10;
+                font-weight: normal;
+                &:hover {
+                    color: $brand-success;
+                }
+            }
+        }
+        &--special {
+            padding: 0;
+            background: none;
+            border: none;
+            .zone__header {
+                margin-bottom: 8px;
+                position: relative;
+            }
+            .zone__title {
+                &::after {
+                    display: none;
+                }
+                a {
+                    font-size: 16px;
+                    padding: 2px 8px;
+                    color: white;
+                    background-color: $brand-primary;
+                    position: static;
+                    &:hover {
+                        background-color: darken($brand-primary, 10%);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    &+.text-muted.text-center {
+        margin-bottom: 16px;
+    }
+}
+
+// ads
+.qc {
+    @include clearfix();
+    margin-bottom: 24px;
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+#site-footer {
+    margin-top: 32px;
+    @include clearfix;
+}
+
+.site-footer {
+    background: #EEEEEE;
+    padding: 16px 0 24px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
+    font-family: $font-family-special;
+    h4 {
+        font-size: 16px;
+        line-height: 1.3em;
+        color: black;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+    p {
+        margin-bottom: 4px;
+        b {
+            color: #111;
+        }
+    }
+    .info {}
+    .contact {
+        a {
+            color: #555;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__nav {
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #ddd;
+        li {
+            font-size: 16px;
+            text-transform: uppercase;
+            a {
+                color: #111;
+                display: block;
+                padding: 8px 0;
+            }
+        }
+    }
+}

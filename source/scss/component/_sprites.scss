@@ -1,0 +1,206 @@
+/* style for sprites  */
+
+*[class^="sprite-"] {
+    display: inline-block;
+    background-image: url(../img/sprites.svg);
+    vertical-align: baseline;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.sprite {
+    &-facebook {
+        width: 14px;
+        height: 14px;
+        background-position: -200px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-twitter {
+        width: 14px;
+        height: 14px;
+        background-position: -250px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-zalo {
+        width: 14px;
+        height: 14px;
+        background-position: -300px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-youtube {
+        width: 14px;
+        height: 14px;
+        background-position: -350px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-instagram {
+        width: 14px;
+        height: 14px;
+        background-position: -400px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-googleplus {
+        width: 14px;
+        height: 14px;
+        background-position: -450px 0px;
+        transition: none;
+        &:hover {
+            background-position-y: -50px;
+            opacity: 1;
+        }
+    }
+    &-playcircle {
+        width: 12px;
+        height: 12px;
+        background-position: 0px 0px;
+    }
+    &-rss {
+        width: 16px;
+        height: 16px;
+        background-position: -50px 0px;
+    }
+    &-mobile {
+        width: 10px;
+        height: 16px;
+        background-position: -100px 0px;
+    }
+    &-play {
+        width: 22px;
+        height: 24px;
+        background-position: 0px -100px;
+    }
+    &-home {
+        width: 18px;
+        height: 14px;
+        background-position: -150px -100px;
+    }
+    &-search {
+        width: 12px;
+        height: 12px;
+        background-position: -150px 0px;
+    }
+    &-arrowup {
+        width: 35px;
+        height: 35px;
+        background-position: -50px -50px;
+    }
+    &-navbar {
+        width: 13px;
+        height: 11px;
+        background-position: -100px -50px;
+    }
+    &-thumbup {
+        width: 12px;
+        height: 12px;
+        background-position: -150px -50px;
+    }
+    &-gotop {
+        width: 35px;
+        height: 35px;
+        background-position: -50px -50px;
+    }
+    &-menu {
+        width: 16px;
+        height: 14px;
+        background-position: -100px -150px;
+        vertical-align: middle;
+    }
+    &-m-search {
+        width: 16px;
+        height: 16px;
+        background-position: -150px -150px;
+        vertical-align: middle;
+    }
+}
+
+*[class^="button-"] {
+    display: inline-block;
+    background-image: url(../img/sprites.svg);
+    vertical-align: baseline;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.button {
+    &-facebook {
+        width: 120px;
+        height: 30px;
+        background-position: 0 -200px;
+    }
+    &-twitter {
+        width: 120px;
+        height: 30px;
+        background-position: -150px -200px;
+    }
+    &-zalo {
+        width: 120px;
+        height: 30px;
+        background-position: -300px -200px;
+    }
+    &-email {
+        width: 120px;
+        height: 30px;
+        background-position: 0px -250px;
+    }
+    &-copy {
+        width: 120px;
+        height: 30px;
+        background-position: -150px -250px;
+    }
+    &-facebook-sm {
+        width: 30px;
+        height: 30px;
+        background-position: 0 -300px;
+    }
+    &-twitter-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -50px -300px;
+    }
+    &-zalo-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -100px -300px;
+    }
+    &-email-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -150px -300px;
+    }
+    &-copy-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -200px -300px;
+    }
+    &-textsize-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -250px -300px;
+    }
+}

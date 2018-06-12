@@ -1,0 +1,114 @@
+html {
+    @include breakpoint(sm) {
+        background-color: #e9ebee;
+    }
+}
+
+body {
+    @include breakpoint(sm) {
+        background-color: white;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+#site-content {
+    @include clearfix;
+    margin-bottom: 32px;
+}
+
+.site-wrap {
+    padding: 0 8px;
+    @include clearfix();
+    &+.site-wrap {
+        margin-top: 24px;
+    }
+}
+
+
+// main-col
+.main-col {
+    &.full,
+    &.large {
+        width: 100%;
+        float: none;
+    }
+}
+
+.sidebar-col {}
+
+&.two-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    >* {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+    }
+}
+
+&.three-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    >* {
+        width: 33.33%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+    }
+}
+
+&.four-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    >* {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+    }
+}
+
+&.five-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    >* {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 16px;
+    }
+}
+
+&.six-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    >* {
+        width: 16.66%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 16px;
+    }
+}
+
+// go top
+#gotop {
+    // display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10%;
+}
