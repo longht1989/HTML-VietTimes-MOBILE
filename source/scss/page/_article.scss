@@ -8,21 +8,26 @@
             margin-top: 8px;
             @include clearfix;
             .article__opinion {
+                @include clearfix;
+                margin-top: 8px;
                 .avatar {
+                    width: 20%;
+                    float: left;
                     img {
                         margin-left: auto;
                         margin-right: auto;
-                        border: 8px solid #eaeaea;
+                        border: 4px solid #eaeaea;
                     }
                 }
             }
             .header {
-                text-align: center;
+                width: 80%;
+                float: right;
+                padding-left: 12px;
                 .name {
                     font-weight: bold;
                     margin-top: 8px;
                     font-family: $font-family-special;
-                    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
                     color: $brand-success;
                 }
                 .title {
@@ -34,14 +39,8 @@
             .article__meta {
                 clear: both;
             }
-            .article__body {
-                float: right;
-                width: 490px;
-            }
-            .article__aside {
-                float: left;
-                width: 160px;
-            }
+            .article__body {}
+            .article__aside {}
         }
     }
     &__header {
@@ -496,14 +495,14 @@
     &__tag {
         .tag-label {
             font-size: 16px;
-            line-height: 24px;
-            margin-bottom: 8px !important;
+            line-height: 24px; // margin-bottom: 8px !important;
             padding-top: 2px;
             font-weight: bold;
             display: inline-block;
         }
         .tag-item {
             color: #777;
+            line-height: 24px;
             display: inline-block;
             font-weight: normal;
             &:hover {
@@ -520,7 +519,6 @@
         background-color: #f0f0f0;
         margin-top: 12px;
         .info {
-            float: left;
             font-size: 14px;
             margin-bottom: 0;
             p {
@@ -537,44 +535,36 @@
             }
         }
         .social {
-            float: right;
+            margin-top: 8px;
             margin-bottom: 0;
             >div {
-                text-align: right;
                 margin-bottom: 0px;
+                max-height: 20px;
+                overflow: hidden;
             }
+            .zalo-follow-only-button {}
         }
     }
     &__react {
         margin-top: 12px;
+        text-align: right;
     }
-    .main-col.full & {
-        &-wrap {
-            padding-left: 160px;
-            padding-right: 160px;
+    &--full {
+        .article__title {
+            text-align: center;
+            &--sub {
+                text-align: center;
+            }
         }
-        &__header {
+        .article__meta,
+        .article__summary {
             text-align: center;
         }
-        &__content {
+        .article__content {
             .full-img {
-                margin-left: -64px;
-                margin-right: -64px;
+                margin-left: -8px;
+                margin-right: -8px;
                 width: initial;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            table.full-img {
-                max-width: initial !important;
-            }
-        }
-        &__footer {
-            .box-comment {
-                width: 666px;
-                margin-left: auto;
-                margin-right: auto;
             }
         }
     }
@@ -584,7 +574,7 @@
             padding-right: 80px;
             &.opinion {
                 .article__body {
-                    width: 680px;
+                    // width: 680px;
                 }
             }
         }
@@ -595,9 +585,8 @@
             text-align: justify;
         }
         &__footer {
-            clear: both;
-            width: 680px;
-            float: right;
+            clear: both; // width: 680px;
+            // float: right;
             .box-comment {}
         }
     }
