@@ -139,19 +139,21 @@
     padding: 8px;
     background-color: #F0F0F0;
     border-bottom: 1px solid #ddd;
+    overflow-x: auto;
     &__listing {
+        min-width: 768px;
+        font-family: $font-family-special;
         li {
-            display: inline;
+            float: left;
+            padding-right: 24px;
             &::before {
                 display: inline-block;
                 content: '•';
-                font-size: 12px;
-                margin-right: 4px;
+                font-size: 18px;
+                line-height: 1em;
+                margin-right: 6px;
                 position: relative;
-                top: -2px;
-            }
-            &+li {
-                margin-left: 24px;
+                top: 2px;
             }
         }
         .event__label {
@@ -161,11 +163,11 @@
         }
     }
     &__label {
-        font-family: $font-family-special;
-        color: $brand-primary; // margin-right: 12px;
-        float: left;
         text-transform: uppercase;
         font-weight: bold;
+        a {
+            color: $brand-primary;
+        }
     }
 }
 
