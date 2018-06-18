@@ -24,14 +24,11 @@ $(function() {
         pause: '5000'
     });
     // author slider
-    $('.zone--special .author_slider').bxSlider({
-        nextText: '',
-        prevText: '',
+    $('.zone--video .slider').bxSlider({
+        nextText: '>',
+        prevText: '<',
         adaptiveHeight: 1,
-        touchEnabled: 0,
-        auto: 1,
-        pagerSelector: ".slider_pager",
-        pause: '5500'
+        auto: 1        
     });
     // affix navigator
     $('.navigator').affix({

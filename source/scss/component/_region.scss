@@ -196,7 +196,71 @@
         .zone__content {
             @include clearfix();
         }
-        .story--video-featured {}
+        .slider-wrap {
+            .story--featured {
+                margin-left: 0;
+                margin-right: 0;
+                .story__header {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+            .no-js & {
+                max-height: 300px;
+                overflow: hidden;
+            }
+            .bx {
+                &-controls {
+                    margin-top: 4px;
+                    position: relative;
+                    height: 32px;
+                    .bx-next,
+                    .bx-prev {
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        width: 32px;
+                        height: 32px;
+                        font-size: 16px;
+                        line-height: 32px;
+                        background-color: white;
+                        text-align: center;
+                        border-radius: 3px;
+                        opacity: 0.3;
+                    }
+                    .bx-next {
+                        right: 0;
+                    }
+                    .bx-prev {
+                        left: 0;
+                    }
+                }
+                &-pager {
+                    @include clearfix;
+                    text-align: center;
+                }
+                &-pager-item {
+                    display: inline-block;
+                    line-height: 0;
+                    &+.bx-pager-item {
+                        margin-left: 8px;
+                    }
+                }
+                &-pager-link {
+                    display: inline-block;
+                    text-indent: -9999em;
+                    background-color: #D8D8D8;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 8px;
+                    transition: all 0.2s linear;
+                    &.active {
+                        background-color: $brand-primary;
+                        width: 24px;
+                    }
+                }
+            }
+        }
     }
     .timeline_listing {
         margin-top: 16px;
