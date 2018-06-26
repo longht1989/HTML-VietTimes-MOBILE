@@ -4,6 +4,10 @@
 .article {
     &-wrap {
         position: relative;
+        background-color: white;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding: 8px;
         &.opinion {
             margin-top: 8px;
             @include clearfix;
@@ -135,6 +139,7 @@
         font-size: 18px;
         line-height: 1.5em;
         color: #333;
+        word-wrap: break-word;
         p,
         div,
         h3,

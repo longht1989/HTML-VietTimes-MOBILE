@@ -6,12 +6,14 @@ $(function() {
     // toggle header search
     $('.btn-menu').click(function() {
         $(this).toggleClass('is-active');
+        $('.btn-search').removeClass('is-active');
         $('.mobile-search').slideUp('fast');
         $(".mobile-menu").slideToggle('fast');
     });
     // toggle header search
     $('.btn-search').click(function() {
         $(this).toggleClass('is-active');
+        $('.btn-menu').removeClass('is-active');
         $('.mobile-menu').slideUp('fast');
         $(".mobile-search").slideToggle('fast');
     });
@@ -28,12 +30,12 @@ $(function() {
         nextText: '>',
         prevText: '<',
         adaptiveHeight: 1,
-        auto: 1        
+        auto: 1
     });
     // affix navigator
-    $('.navigator').affix({
+    $('.site-header__content').affix({
         offset: {
-            top: $("#site-content").offset().top
+            top: $(".site-header__content").offset().top
         }
     })
     // go top 

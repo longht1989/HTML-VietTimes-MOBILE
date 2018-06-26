@@ -7,30 +7,35 @@
 
 .zone {
     margin-bottom: 24px;
+    background-color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 9px 0;
     &__header {
-        margin-bottom: 16px;
-        margin-left: -8px;
-        margin-right: -8px;
+        margin-bottom: 12px;
     }
     &__title {
+        padding-left: 8px;
         a {
-            display: block;
+            display: inline-block;
             font-size: 18px;
             line-height: 1.4;
-            padding: 4px 8px 0;
-            border-top: 2px solid $brand-primary;
-            color: $brand-primary;
+            padding: 4px 8px;
+            color: white;
+            background-color: $brand-primary;
             font-family: $font-family-special;
             text-transform: uppercase;
             transition: all 0.2s linear;
-            font-weight: bold;
             &:hover {
-                color: darken($brand-primary, 10%);
+                background-color: darken($brand-primary, 10%);
             }
         }
     }
-    &__content {}
+    &__content {
+        padding: 0 8px;
+    }
     &__footer {
+        padding: 8px;
         text-align: center;
         margin-top: 12px;
         .btn {
@@ -45,6 +50,7 @@
         }
     }
     &--highlight {
+        padding-top: 0;
         .zone__content {
             position: relative;
             .no-js & {
@@ -175,14 +181,12 @@
         }
     }
     &--video {
-        padding: 16px 8px;
-        margin-left: -8px;
-        margin-right: -8px;
         background-color: #2e2f2f;
         .zone__header {
             margin-bottom: 12px;
         }
         .zone__title {
+            padding-left: 0;
             a {
                 font-weight: normal;
                 background: transparent;

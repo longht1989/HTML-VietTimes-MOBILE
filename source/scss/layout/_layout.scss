@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    background-color: #E9EBEE;
     @include breakpoint(sm) {
         background-color: white;
         max-width: 600px;
