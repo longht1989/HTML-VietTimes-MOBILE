@@ -25,10 +25,17 @@ $(function() {
         auto: 1,
         pause: '5000'
     });
-    // author slider
+    // video slider
     $('.zone--video .slider').bxSlider({
         nextText: '>',
         prevText: '<',
+        adaptiveHeight: 1,
+        auto: 1
+    });
+    // author slider
+    $('.author_slider').bxSlider({
+        nextText: '',
+        prevText: '',
         adaptiveHeight: 1,
         auto: 1
     });

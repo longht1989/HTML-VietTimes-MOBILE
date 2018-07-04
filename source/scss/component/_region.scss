@@ -113,41 +113,7 @@
         }
     }
     &--special {
-        padding: 0;
-        background: none;
-        .zone__header {
-            margin-bottom: 8px;
-            position: relative;
-        }
-        .zone__title {
-            a {
-                font-size: 16px;
-                color: $brand-success;
-                padding: 0;
-                background: none;
-                &:hover {
-                    color: darken($brand-success, 10%);
-                }
-            }
-        }
-        .zone__content {
-            background: white;
-            padding: 16px 8px;
-            border: 1px solid #DDDDDD;
-            position: relative;
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 70%;
-                background: url(../img/bg_specialzone.svg) right top no-repeat;
-                background-size: cover;
-                z-index: 0;
-            }
-        }
+        position: relative;
         .no-js & {
             max-height: 130px;
             overflow: hidden;
@@ -155,8 +121,8 @@
         .bx {
             &-pager {
                 position: absolute;
-                top: 10px;
-                right: 0px;
+                top: 18px;
+                right: 10px;
             }
             &-pager-item {
                 float: left;
