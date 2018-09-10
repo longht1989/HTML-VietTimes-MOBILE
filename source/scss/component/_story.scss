@@ -252,201 +252,201 @@
             }
         }
     }
-    &.video {
-        .story__title {
-            a {
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 14px;
-                    height: 14px;
-                    background-image: url(../img/sprites.svg);
-                    background-position: -250px -100px;
-                    margin-left: 4px;
-                    .editor_choice & {
-                        background-position-y: -150px;
-                    }
-                }
-            }
-        }
-        .zone--video & {
-            .story__title {
-                a {
-                    &::after {
-                        background-position-y: -150px;
-                    }
-                }
-            }
-        }
-    }
-    &.picture {
-        .story__title {
-            a {
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 16px;
-                    height: 14px;
-                    background-image: url(../img/sprites.svg);
-                    background-position: -200px -100px;
-                    margin-left: 4px;
-                    .editor_choice & {
-                        background-position-y: -150px;
-                    }
-                }
-            }
-        }
-    }
-    &.chart {
-        .story__title {
-            a {
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 16px;
-                    height: 14px;
-                    background-image: url(../img/sprites.svg);
-                    background-position: -350px -100px;
-                    margin-left: 4px;
-                    .editor_choice & {
-                        background-position-y: -150px;
-                    }
-                }
-            }
-        }
-    }
-    &.audio {
-        .story__title {
-            a {
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 16px;
-                    height: 14px;
-                    background-image: url(../img/sprites.svg);
-                    background-position: -300px -100px;
-                    margin-left: 4px;
-                    .editor_choice & {
-                        background-position-y: -150px;
-                    }
-                }
-            }
-        }
-    }
-    &.live {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Live';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
-    &.updating {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Updating';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
-    &.infographic {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Infographic';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
-    &.exclusive {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Exclusive';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
-    &.analysis {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Analysis';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
-    &.breakingnews {
-        .story__title {
-            a {
-                &::after {
-                    content: 'Breaking News';
-                    display: inline-block;
-                    font-size: 0.6em;
-                    line-height: 1.2em;
-                    border-radius: 2px;
-                    padding: 2px 6px;
-                    vertical-align: text-top;
-                    color: white;
-                    font-weight: normal;
-                    background-color: $brand-primary;
-                    margin-left: 4px;
-                }
-            }
-        }
-    }
+    // &.video {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: '';
+    //                 display: inline-block;
+    //                 width: 14px;
+    //                 height: 14px;
+    //                 background-image: url(../img/sprites.svg);
+    //                 background-position: -250px -100px;
+    //                 margin-left: 4px;
+    //                 .editor_choice & {
+    //                     background-position-y: -150px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     .zone--video & {
+    //         .story__title {
+    //             a {
+    //                 &::after {
+    //                     background-position-y: -150px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // &.picture {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: '';
+    //                 display: inline-block;
+    //                 width: 16px;
+    //                 height: 14px;
+    //                 background-image: url(../img/sprites.svg);
+    //                 background-position: -200px -100px;
+    //                 margin-left: 4px;
+    //                 .editor_choice & {
+    //                     background-position-y: -150px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // &.chart {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: '';
+    //                 display: inline-block;
+    //                 width: 16px;
+    //                 height: 14px;
+    //                 background-image: url(../img/sprites.svg);
+    //                 background-position: -350px -100px;
+    //                 margin-left: 4px;
+    //                 .editor_choice & {
+    //                     background-position-y: -150px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // &.audio {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: '';
+    //                 display: inline-block;
+    //                 width: 16px;
+    //                 height: 14px;
+    //                 background-image: url(../img/sprites.svg);
+    //                 background-position: -300px -100px;
+    //                 margin-left: 4px;
+    //                 .editor_choice & {
+    //                     background-position-y: -150px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // &.live {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Live';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.updating {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Updating';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.infographic {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Infographic';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.exclusive {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Exclusive';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.analysis {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Analysis';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.breakingnews {
+    //     .story__title {
+    //         a {
+    //             &::after {
+    //                 content: 'Breaking News';
+    //                 display: inline-block;
+    //                 font-size: 0.6em;
+    //                 line-height: 1.2em;
+    //                 border-radius: 2px;
+    //                 padding: 2px 6px;
+    //                 vertical-align: text-top;
+    //                 color: white;
+    //                 font-weight: normal;
+    //                 background-color: $brand-primary;
+    //                 margin-left: 4px;
+    //             }
+    //         }
+    //     }
+    // }
     &.sponsor {
         .story__meta {
             &::after {

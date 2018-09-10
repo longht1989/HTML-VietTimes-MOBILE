@@ -11,19 +11,24 @@
     background: #EEEEEE;
     padding: 16px 0 24px;
     border-top: 1px solid #ddd;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: 1.4;
     color: #555;
     font-family: $font-family-special;
     h4 {
         font-size: 16px;
         line-height: 1.3em;
         color: black;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         font-weight: bold;
     }
+    h5 {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 2px;
+    }
     p {
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         b {
             color: #111;
         }

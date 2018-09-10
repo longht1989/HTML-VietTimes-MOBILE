@@ -134,6 +134,142 @@
         background-position: -150px -150px;
         vertical-align: middle;
     }
+    &-video {
+        width: 14px;
+        height: 14px;
+        background-image: url(../img/sprites.svg);
+        background-position: -250px -100px;
+        margin-left: 4px;
+        .editor_choice & {
+            background-position-y: -150px;
+        }
+    }
+    &-picture {
+        width: 16px;
+        height: 14px;
+        background-image: url(../img/sprites.svg);
+        background-position: -200px -100px;
+        margin-left: 4px;
+        .editor_choice & {
+            background-position-y: -150px;
+        }
+    }
+    &-chart {
+        width: 16px;
+        height: 14px;
+        background-image: url(../img/sprites.svg);
+        background-position: -350px -100px;
+        margin-left: 4px;
+        .editor_choice & {
+            background-position-y: -150px;
+        }
+    }
+    &-audio {
+        width: 16px;
+        height: 14px;
+        background-image: url(../img/sprites.svg);
+        background-position: -300px -100px;
+        margin-left: 4px;
+        .editor_choice & {
+            background-position-y: -150px;
+        }
+    }
+    &-live {
+        background: none;
+        &::after {
+            content: 'Live';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
+    &-updating {
+        background: none;
+        &::after {
+            content: 'Updating';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
+    &-infographic {
+        background: none;
+        &::after {
+            content: 'Infographic';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
+    &-exclusive {
+        background: none;
+        &::after {
+            content: 'Exclusive';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
+    &-analysis {
+        background: none;
+        &::after {
+            content: 'Analysis';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
+    &-breakingnes {
+        background: none;
+        &::after {
+            content: 'Breaking News';
+            display: inline-block;
+            font-size: 0.6em;
+            line-height: 1.2em;
+            border-radius: 2px;
+            padding: 2px 6px;
+            vertical-align: middle;
+            color: white;
+            font-weight: normal;
+            background-color: $brand-primary;
+            margin-left: 4px;
+        }
+    }
 }
 
 *[class^="button-"] {
