@@ -42,9 +42,16 @@ $(function() {
     // affix navigator
     $('.site-header__content').affix({
         offset: {
-            top: $(".site-header__content").offset().top
+            top: $(".site-header__content").height()
         }
     })
+
+    // toggle sub category menu listing
+    $(".mobile-menu .menu .sprite-more ").on('click', function() {
+        $(this).toggleClass('is-active');
+        $(this).siblings(".menu__sub").slideToggle('fast');
+    });
+
     // go top 
     $(".sprite-gotop").click(function() {
         return $("body,html").animate({ scrollTop: 0 }, 800), !1
